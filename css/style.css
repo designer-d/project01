@@ -1,0 +1,29 @@
+@charset "utf-8";
+ 
+body {
+	/* height: 500vh; */
+	/* background: url(https://assets.codepen.io/756881/bg-fuzz); */
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	/* font-family: "Kanit", sans-serif; */
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+svg {
+	margin-top: 80vh;
+	max-height: 60vh;
+	/* width: 500px; */
+}
+
+.scroll {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 120px;
+	color: white;
+}

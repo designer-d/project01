@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+#wrap{min-width: 320px;}
+header{position: fixed; top: 0; left: 0; width: 100%; height: 44px; border-bottom: 1px solid #fff; z-index: 99;}
+h1 a{display: block; height: 44px; margin: 0 auto; background:transparent url(../img/tlogo_w.png) no-repeat center / auto 30px;}
+
+.menu_btn a{display: block; width: 44px; height: 44px; position: absolute; top: 0;
+background-image: url(../img/icon_sprite.png);
+background-repeat: no-repeat;}
+.menu_btn a.open{left: 5px; background-position: 0 0;}
+.menu_btn a.close{left: 5px; background-position: -88px 0; display: none;}
+
+nav{width: 130px; background-color: rgba(0,0,0,0.8); padding: 20px; display: none;}
+nav .menu_le > li{margin-bottom: 15px;}
+nav .menu_le > li > .menu_out{color: #2ea0cd; display: block; margin-bottom: 6px; font-size: 2rem; }
+nav .menu_in > li{margin-bottom: 5px;}
+nav .menu_in > li > a{font-size: 1.5rem; }
+
+.menu_ri{display: block; position: absolute; top: 0; right: 0;}
+.menu_ri .login a{display: block; width: 44px; height: 44px; position: absolute; top: 0; right: 44px;
+  font-size: 0; color: transparent;
+  background: url(../img/icon_sprite.png) no-repeat left -132px top 0;}
+
+.menu_ri .lang{float: left; position: absolute; top: 11px; left: -50px; font-size: 1.8rem; display: none;}
+.menu_ri .lang .btn{color: #2ea0cd; }
+.menu_ri .lang .list{position: absolute; top: -8px; left: -15px; background: rgba(255, 255, 255, 0.8); 
+    height: 0; overflow: hidden; transition: height 0.3s;}
+.menu_ri .lang .list li a{display: block; padding: 8px 15px; color: #2ea0cd; opacity: 0.5;}
+.menu_ri .lang:hover .list{height: 108px;}
+
+.menu_ri .lang .list .on a{opacity: 1;}
+.menu_ri .lang .list li:hover a{opacity: 1;}
+
+
+#visual{height: 640px; background: url(../img/main_visu01.jpg) no-repeat center / cover; position: relative;}
+#visual > a{display: none;}
+#visual .paging{position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);}
+#visual .paging li{float: left; margin-right: 10px;}
+#visual .paging li:last-child{margin-right: 0;}
+#visual .paging li a{display: block; width: 10px; height: 10px; background-color: transparent; border-radius: 50%; 
+  border: 1px solid #fff;}
+#visual .paging li.on a{background-color: #fff; }
+
+#contents{padding: 20px 0;}
+.inner{ margin: 0 auto;}
+#contents .contents img{margin-bottom: 20px; width: 100%; }
+#contents .contents .img{display: none;}
+#contents .contents h3{color: #2ea0cd; font-size: 2.8rem; margin-bottom: 10px;}
+#contents .contents p{font-size: 2rem; line-height: 1.5;}
+#contents .txt_box{margin-bottom: 30px;}
+#contents .txt_box .txt{float: left;}
+#contents .txt_box .more_b{float: right; color: #2ea0cd; border: 1px solid #2ea0cd; 
+  font-size: 1.8rem; padding: 10px 50px; }
+#contents .txt_box:hover .more_b{background-color: #2ea0cd; color: #fff;}
+
+#mid{height: 300px; background: url(../img/surface.jpg) no-repeat center / auto; position: relative;}
+#mid img{position: absolute; top: 125px; left: 50%; transform: translate(-50%);}
+
+#bottom{margin-bottom: 30px;}
+#bottom h4{color: #2ea0cd; font-size: 2.8rem; text-align: center; padding: 50px 0 15px;}
+#bottom .feed{margin-bottom: 50px;}
+#bottom .feed a{
+  float: left; 
+  width: calc((100% - 20px) / 3); margin-bottom: 10px;
+  padding-bottom: 30%; margin-right: 10px;}
+#bottom .feed a:nth-child(1){
+  background: url(../img/insta01.jpg) no-repeat center / cover;}
+#bottom .feed a:nth-child(2){
+  background: url(../img/insta02.jpg) no-repeat center / cover;}
+#bottom .feed a:nth-child(3){
+  margin-right: 0;
+  background: url(../img/insta03.jpg) no-repeat center / cover;} 
+#bottom .feed a:nth-child(4){
+  background: url(../img/insta04.jpg) no-repeat center / cover;}
+#bottom .feed a:nth-child(5){
+  background: url(../img/insta05.jpg) no-repeat center / cover;}  
+#bottom .feed a:nth-child(6){
+  background: url(../img/insta06.jpg) no-repeat center / cover;  
+  margin-right: 0;}
+
+  footer .inner{padding: 0 16px;}
+
+@media (min-width:768px) {
+  header{height: 44px; border-bottom: 1px solid #fff;}
+  h1 a{height: 44px; background:transparent url(../img/tlogo_w.png) no-repeat center / auto 30px;}
+  
+  .menu_btn a{display: block; width: 44px; height: 44px; background-size: auto 88px;}
+  .menu_btn a.open{left: 5px; background-position: 0 0;}
+  .menu_btn a.close{left: 5px; background-position: -88px 0; display: none;}
+  
+  .menu_ri .login a{display: block; width: 44px; height: 44px; position: absolute; top: 0; right: 66px;
+    font-size: 0; color: transparent;
+    background: url(../img/icon_sprite.png) no-repeat left -132px top 0 / auto 88px;}
+  .menu_ri .lang{display: block;}
+
+  #contents{padding: 60px 0;}
+  .inner{width: 704px; margin: 0 auto;}
+  #contents .txt_box .more_b{float: left; padding: 10px 60px; }
+
+  #contents .con01 img{float: right; width: 60%; margin-bottom: 40px;}
+  #contents .con01 .txt_box{float: left; width: 40%;}
+  #contents .con01 p{margin-bottom: 130px;}
+
+  #contents .con02 img{float: left; width: 60%;}
+  #contents .con02 .txt_box{float: right; width: 40%; padding-left: 44px;}
+  #contents .con02 .txt_box .txt{text-align: right;}
+  #contents .con02 .txt_box .more_b{float: right; }
+  #contents .con02 p{margin-bottom: 153px;}
+
+  #bottom .inner{padding: 0 64px;}
+  #bottom .feed a{float: left; margin-right: 10px; padding-bottom: 30%;}
+  
+
+
+}
+
+
+
+
+@media (min-width:1280px) {
+  header{height: 66px;}
+  header h1 a{height: 66px; background:transparent url(../img/tlogo_w.png) no-repeat center / auto 45px;}
+
+  .menu_btn a{display: none;}
+  nav{display: block; position: absolute; top: 0; left: 0; width: auto; background-color: transparent; padding: 0;}
+  nav .menu_le > li{width: 100px; text-align: center; float: left; margin-bottom: 0; }
+  nav .menu_le > li:hover a{width: 100px; color: #2ea0cd;}
+  nav .menu_le > li > .menu_out{margin-bottom: 0; padding: 23px 10px; color: #fff;}
+  nav .menu_in{height: 0; overflow: hidden; background-color: #2ea0cd; transition: all 0.5s;}
+
+  nav .menu_le > li:hover .height01{height: 80px;}
+  nav .menu_le > li:hover .height02{height: 80px;}
+  nav .menu_le > li:hover .height03{height: 200px;}
+  nav .menu_le > li .menu_in a{display: block; padding: 10px;}
+
+  .menu_ri .login a{display: block; width: 66px; height: 66px; position: absolute; top: 20px; right: 66px;
+    font-size: 2rem; color: #fff; background: none}
+  .menu_ri .login:hover a{color: #2ea0cd;}
+  .menu_ri .lang{ top: 22px;}
+
+  #visual{height: 960px;}
+
+  #contents{padding: 80px 128px;}
+  .inner{width: 1024px; margin: 0 auto;}
+  #contents .contents img{display: none;}
+  #contents .contents .img{display: block;}
+#contents .con01 .img{float: right; width: 60%; margin-bottom: 80px;
+   background: url(../img/m_img01.jpg) no-repeat center / auto; 
+  height: 281px;}
+#contents .con02 .img{float: left; width: 60%; margin-bottom: 40px;
+  background: url(../img/m_img02.jpg) no-repeat center / auto; 
+  height: 281px;}
+
+  #contents .txt_box{padding-top: 100px;}
+  #contents .txt_box .txt{float: none;}
+  #contents .txt_box .more_b{float: left; padding: 10px 70px; }
+  #contents .con01 p{margin-bottom: 40px;}
+  #contents .con02 p{margin-bottom: 50px;}
+  #contents .con02 .txt_box .txt{text-align: right;}  
+
+  #bottom{margin-bottom: 50px;}
+  #bottom h4{color: #2ea0cd; font-size: 2.8rem; text-align: center; padding: 60px 0 30px;}
+  #bottom .feed a{
+    float: left; margin-right: 10px; 
+    padding-bottom: 20%; 
+    transition: all 0.3s; 
+    overflow: hidden;
+    /* border: 1px solid red; */
+  }
+
+
+  #bottom .feed a:nth-child(1){width: calc((100% - 40px) / 5); 
+    background: url(../img/insta01.jpg) no-repeat center / auto 100%;}
+  #bottom .feed a:nth-child(2){width: calc((100% - 40px) / 5); 
+    background: url(../img/insta02.jpg) no-repeat center / auto 100%;}
+  #bottom .feed a:nth-child(3){width: calc((100% - 40px) / 5);  margin-right: 10px;
+    background: url(../img/insta03.jpg) no-repeat center / auto 100%;}
+  #bottom .feed a:nth-child(4){width: calc((100% - 40px) / 5); 
+    background: url(../img/insta04.jpg) no-repeat center / auto 100%;}
+  #bottom .feed a:nth-child(5){width: calc((100% - 40px) / 5);margin-right: 0;
+    background: url(../img/insta05.jpg) no-repeat center / auto 100%;}
+  #bottom .feed a:nth-child(6){display: none; width: calc((100% - 40px) / 5);  margin-right: 0;
+    background: url(../img/insta06.jpg) no-repeat center / auto 100%;}
+    
+  #bottom .feed a:hover{background-size: auto 120%;}
+}
+

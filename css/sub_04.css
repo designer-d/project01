@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+
+#sub04_container{padding: 100px 0 20px; font-size: 2rem; line-height: 1.5;}
+#sub04_container .inner{padding: 0 16px 30px;}
+#sub04_container .login_tit{display: block; width: 100px; margin: 0 auto; text-align: center; 
+  padding: 20px 0 50px 0; }
+
+#sub04_container .login_form{width: 360px; margin: 0 auto;}
+#sub04_container .login_form fieldset{padding: 15px 0;}
+#sub04_container input.login_id, .login_pw{width: 360px; height: 50px; font-size: 2rem; border: 1px solid #2ea0cd; 
+  border-radius: 0; padding: 10px; margin-bottom: 20px; display: block;}
+#sub04_container input.save_chck{width: 30px; display: inline-block;}
+#sub04_container input.save_id:hover{color: #2ea0cd;}
+#sub04_container button{display: block; background-color: #2ea0cd; font-size: 2rem;
+  width: 360px; height: 50px; color: #fff; margin: 20px 0;}
+#sub04_container .login_form fieldset p{float: right; width: 100px; text-align: right; color: #2ea0cd;}
+
+#sub04_container .sns_login ul{position: relative; width: 324px; margin: 0 auto;}
+#sub04_container .sns_login li a{float: left; width: 66px; height: 66px; text-align: center; margin-right: 20px;
+  background-image: url(../img/sns_login.png); background-repeat:  no-repeat; background-size: auto 66px;  padding-top: 66px;}
+#sub04_container .sns_login li a:hover{color: #2ea0cd; }
+
+#sub04_container .sns_login li:nth-child(1) a{background-position: top 0 left 0 ; }
+#sub04_container .sns_login li:nth-child(2) a{background-position: top 0 left -66px ; }
+#sub04_container .sns_login li:nth-child(3) a{background-position: top 0 left -132px ; }
+#sub04_container .sns_login li:nth-child(4) a{background-position: top 0 left -198px ;  margin-right: 0;}
+
+
+#sub04_container .txt_box{text-align: center; padding: 15px 0; font-weight: 400; margin: 0 auto; margin-top: 100px;}
+#sub04_container .txt_box a{display: inline-block; margin-right: 30px;}
+#sub04_container .txt_box a:hover{color: #2ea0cd; }
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px) {
+  #sub04_container .login_form{width: 480px;}
+  #sub04_container input.login_id, .login_pw{width: 480px; height: 60px;}
+  #sub04_container button{width: 480px;  height: 60px;}
+
+}
+
+
+
+
+
+
+@media (min-width:1280px) {
+ 
+}
+

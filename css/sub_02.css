@@ -1,0 +1,33 @@
+@charset "utf-8";
+ 
+
+#sub02_container{height: 960px; background: url(../img/pd_bg.png) no-repeat center / contain;}
+#sub02_container1{height: 960px; background: url(../img/pd_bg03.png) no-repeat center / contain;}
+#sub02_container .v_txt{background: url(../img/tlogo_w.png) no-repeat center / auto 50px; width: 50%; font-size: 2rem; text-align: center; padding-top: 500px; margin: 0 auto; color: #fff; }
+#sub02_container .v_txt h2{display: block; width: 300px; height: 48px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+
+.scroll {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 120px;
+	color: white;
+}
+
+@media (min-width:768px) {
+ 
+
+
+}
+
+
+
+
+@media (min-width:1280px) {
+
+  
+ 
+}
+

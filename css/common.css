@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*모든 페이지에서 공통으로 사용하는 */
+.clear::after{content: ''; display: block; clear: both;}
+.hidden{font-size: 0; color: transparent;}
+
+/*폰트 설정*/
+.font_bold{font-weight: 400 !important;}
+.font_color_white{color: #fff !important;}
+.font_color_blue{color: #2ea0cd !important;}
+
+footer{background-color: #eee; padding: 50px 0; font-size: 1.5rem; line-height: 1.5; }
+.inner{position: relative;}
+footer .txt_box{float: left; width: 100%; margin-bottom: 10px;}
+footer .info_box{float: left; width: 100%; margin-bottom: 20px;}
+footer .copy{margin-bottom: 10px;}
+
+footer .f_sns{position: absolute ; top: 0; right: 16px;}
+footer .f_sns li{width: 48px; height: 48px; float: left; background: url(../img/sns_sprite.png) no-repeat top 0 left 0 / auto;}
+footer .f_sns li.insta{background-position: top 0 left -48px;}
+footer .f_sns li.youtube{background-position: top 0 left -96px;}
+footer .f_sns li:hover a{background-color: #fff; border-radius: 50%;}
+
+.go_top{display: block; width: 48px; height: 48px; background: url(../img/btn_top.gif) no-repeat center; 
+  background-color: #fff; border-radius: 50%; overflow: hidden; font-size: 0; color: transparent; 
+  position: fixed; bottom: 30px; right: 5%;}
+
+
+@media (min-width:768px) {
+  footer{font-size: 1.6rem; line-height: 1.6; }
+footer .txt_box{float: left; width: 30%; margin-bottom: 20px;}
+footer .info_box{float: left; width: 70%; margin-bottom: 20px;}
+footer .copy{float: left; width: 50%;}
+footer a{float: left;}
+}
+
+
+@media (min-width:1280px) {
+  footer{font-size: 1.8rem; line-height: 1.8; }
+  footer .copy{width: 40%;}
+  footer a:hover{color: #2ea0cd;}
+
+  .go_top{bottom: 50px; right: 10%;}
+}
