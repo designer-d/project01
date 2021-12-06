@@ -42,12 +42,11 @@ nav .menu_in > li > a{font-size: 1.5rem; }
 #visual .paging li.on a{background-color: #fff; }
 
 #contents{padding: 20px 0;}
-#contents .inner{padding: 10px; margin: 0 auto;} /**/
 #contents .contents img{margin-bottom: 20px; width: 100%; }
 #contents .contents .img{display: none;}
 #contents .contents h3{color: #2ea0cd; font-size: 2.8rem; margin-bottom: 10px;}
 #contents .contents p{font-size: 2rem; line-height: 1.5;}
-#contents .txt_box{margin-bottom: 30px;}
+#contents .txt_box{padding: 10px;  margin-bottom: 30px;}
 #contents .txt_box .txt{float: left;}
 #contents .txt_box .more_b{float: right; color: #2ea0cd; border: 1px solid #2ea0cd; 
   font-size: 1.8rem; padding: 10px 50px; }
