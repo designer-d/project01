@@ -49,7 +49,7 @@ nav .menu_in > li > a{font-size: 1.5rem; }
 #contents .txt_box{padding: 10px;  margin-bottom: 30px;}
 #contents .txt_box .txt{float: left;}
 #contents .txt_box .more_b{float: right; color: #2ea0cd; border: 1px solid #2ea0cd; 
-  font-size: 1.8rem; padding: 10px 50px; }
+  font-size: 1.8rem; padding: 10px 30px; }
 #contents .txt_box:hover .more_b{background-color: #2ea0cd; color: #fff;}
 
 #mid{height: 300px; background: url(../img/surface.jpg) no-repeat center / auto; position: relative;}
